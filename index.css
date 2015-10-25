@@ -1,0 +1,138 @@
+/* Заголовок */
+body > header > div {
+	text-align: center;	
+	width: 100%;
+}
+body > header > div > span {
+	max-width: 150px;
+	max-height: 150px;
+	display: inline-block;
+	vertical-align: middle;	
+	border: 4px double #000;
+	padding: 10px;
+	letter-spacing: 1px;
+	font: 15px 'Cinzel Decorative', serif;
+}
+span.left {
+	margin-right: 3%;
+}
+span.right {
+	margin-left: 3%;
+}
+body > header > div > p {
+	font: 75px 'Fredericka the Great', cursive;
+	display: inline-block;
+	margin: 0;
+	vertical-align: middle;
+}
+body > header > div > img {
+	display: inline-block;
+	width: 13%;
+	vertical-align: middle;
+}
+/* Подзаголовок */
+section > header > div {
+	margin: 0 auto;
+	font: 25px 'Satisfy', cursive;
+	width: 93.5%;
+	max-height: 50px;
+	border: 4px double #000;
+	font-variant: small-caps;
+}
+section > header > span {
+	display: block;
+	vertical-align: middle;	
+}
+span.date {
+	margin-left: 5%;
+}
+span.price {
+	float: right;
+	margin-right: 5%;
+}
+/* Статья с Алыми парусами */
+article {
+	width: 90%;
+	text-align: justify;
+	margin-left: 2.5%;
+	margin-top: 3%;
+	font: 20px 'IM Fell Double Pica', serif;
+	border: 40px solid transparent;
+	border-image-source: url(http://cs628824.vk.me/v628824611/17660/qNB21TcAOFY.jpg);
+	border-image-slice:  100 100;
+	border-image-repeat: round;
+}
+article > header {
+	text-transform: uppercase;
+	font: 35px 'Fredericka the Great', cursive;
+	font-weight: bold;
+	text-decoration: overline underline;
+	text-align: center;
+}
+article > div {
+	-webkit-column-count: 3;
+	-webkit-column-rule: 3px dotted #ccc; 
+}
+article > div > img {
+	vertical-align: middle;
+	width: 95%;
+	margin-left: 2.5%;
+}
+article > div > p, figcaption > p {
+	text-indent: 2%;
+}
+article > div > p::first-letter, figcaption > p::first-letter {
+	font: 30px 'Cinzel Decorative', cursive;
+}
+.assolHeader {
+	text-transform: uppercase;
+	text-shadow: 2px 2px #858585;
+	font-family: 'Jacques Francois Shadow', cursive;
+	text-align: center;
+}
+.assolHeader::first-letter {
+	font: 20px 'Jacques Francois Shadow', cursive;
+}
+.blockquote {
+	border-bottom: 3px dashed #bababa;
+	border-top: 3px dashed #bababa;
+	padding: 10px 15px;
+	font: 30px 'Italianno', cursive;
+	line-height: 1;
+}
+.blockquote::first-letter {
+	font-family: 'Italianno', cursive;
+}
+hr {
+	width: 80%;
+}
+.last {
+	-webkit-column-span: all;
+}
+.letUs, .last > p {
+	font: 30px 'Cinzel Decorative', cursive;
+	text-align: center;
+}
+figure {
+	border: 2px dotted #ccc;
+	padding: 20px 20px;
+	text-align: center;
+	width: 1150px;
+	margin: auto;
+}
+figure > p > img {
+	height: 300px;	
+}
+figcaption {
+	text-align: justify;
+	-webkit-column-count: 2;
+	width: 978px;
+	margin: auto;
+}
+/* Подвал */
+footer > p {
+	width: 100%;
+	text-align: center;
+	font: 40px 'Meddon' cursive;
+	letter-spacing: 0.5em;
+}
