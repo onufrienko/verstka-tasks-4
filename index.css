@@ -136,3 +136,18 @@ footer > p {
 	font: 40px 'Meddon' cursive;
 	letter-spacing: 0.5em;
 }
+/* Настройки */
+.settings {
+	margin-top: 1%;
+	font: 15px 'Cinzel Decorative', serif;
+}
+.settings > div {
+	display: inline-block;
+}
+.chooseColor {
+	float: right;
+	margin-right: 5%;
+}
+.chooseFontSize {
+	margin-left: 5%;
+}
