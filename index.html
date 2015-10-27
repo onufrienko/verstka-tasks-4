@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-    <meta charset="utf-8">
-    <title>DeLorean DMC-12</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Satisfy" 
-    rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Italianno"
-    rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700" 
-    rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Meddon" 
-    rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica" 
-    rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow" 
-    rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" 
-    rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <title>DeLorean DMC-12</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" 
+        rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Italianno"
+        rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700" 
+        rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Meddon" 
+        rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica" 
+        rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow" 
+        rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" 
+        rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' 
+        rel='stylesheet' type='text/css'>
     </head>
     <body>
+        <span>Change font-size:</span>
+        <label for="smaller">Smaller!</label>
+        <input type="radio" name="fontSize" id="smaller">
+        <label for="standart">Standart!</label>
+        <input type="radio" name="fontSize" id="standart" checked="checked">
+        <label for="bigger">Bigger!</label>
+        <input type="radio" name="fontSize" id="bigger">
+        <span class="color">Change color:</span>
+        <label for="white">White!</label>
+        <input type="radio" name="color" id="white" checked="checked">
+        <label for="black">Black!</label>
+        <input type="radio" name="color" id="black">
         <header>
-            <div>
-                <span class="left">We love stories, but don't believe them.</span>
-                <img src="http://cs622730.vk.me/v622730611/4c791/J8DZHrv8iZc.jpg"
-                alt="Ассоль-красавица">
-                <p>Grin's Land Times</p>
-                <span class="right">There is always sunny and nice weather.</span>
+            <div class="mainHeader">
+                <span class="left">We love stories, but don't believe them. (A. Grin)</span>
+                <img src="http://effects1.ru/png/kartinka/parusnik_png/1/10-staryj_parusnik-400.png"
+                class="ship" alt="Кораблик">
+                <p class="name">Grin's Land Times</p>
+                <span class="right">Just enjoy always sunny and nice weather.</span>
             </div>
         </header>
         <section>
@@ -34,22 +48,6 @@
                 <div>
                     <span class="date">&#9733; 25th October, Sunday, 2015 &#9733;</span>
                     <span class="price">&#9733; Absolutely free for everyone &#9733;</span>
-                </div>
-                <div class="settings">
-                    <div class="chooseFontSize">
-                        <span>Change font-size:</span>
-                        <label for="smaller">Smaller!</label>
-                        <input type="radio" name="fontSize" id="smaller">
-                        <label for="bigger">Bigger!</label>
-                        <input type="radio" name="fontSize" id="bigger">
-                    </div>
-                    <div class="chooseColor">
-                        <span>Change color:</span>
-                        <label for="black">Black!</label>
-                        <input type="radio" name="fontSize" id="black">
-                        <label for="white">White!</label>
-                        <input type="radio" name="fontSize" id="white">
-                    </div>
                 </div>
             </header>
             <article>
@@ -62,7 +60,8 @@
                     <p class="assolHeader">Assol has met Arthur Grey</p>
                     <hr>
                     <p class="assolHeader">Fabulous prophesy came true</p>
-                    <img src="http://cs622730.vk.me/v622730611/4c7a1/3y27plvv564.jpg">
+                    <img src="http://cs622730.vk.me/v622730611/4c7a1/3y27plvv564.jpg"
+                    alt="Ассоль-красавица">
                     <p>
                         Arthur Grey is a no&shy;ble&shy;man's son who breaks away from his cru&shy;el 
                         fa&shy;ther to pursue a life at sea, and eventually becomes the captain of a 
@@ -137,12 +136,8 @@
                     <div class="last">
                         <p>Miracles are made with own hands.</p>
                         <figure>
-                            <p>
-                                <img src="http://cs628824.vk.me/v628824611/176e8/lerqtKM5f80.jpg" 
-                                alt="Кораблик">
-                                <img src="http://cs628824.vk.me/v628824611/176f8/bugKNw4VvPY.jpg"
-                                alt="Ассоль и Грей">
-                            </p>
+                            <img src="http://cs623431.vk.me/v623431611/46236/XEZPDE6i4B0.jpg"
+                            alt="photos"> 
                             <figcaption>
                                 <p>
                                     Nev&shy;er before had a large ship approached this shore; the ship had 
@@ -160,9 +155,12 @@
                     </div>
                 </div>
             </article>
+            <footer>
+                <p>&copy; Alexander Grin</p>
+            </footer>
         </section>
-        <footer>
+        <!-- <footer>
             <p>&copy; Alexander Grin</p>
-        </footer>
+        </footer> -->
     </body>
 </html>
