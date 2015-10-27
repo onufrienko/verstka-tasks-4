@@ -1,15 +1,17 @@
 /* Заголовок */
-body > header > div {
-	text-align: center;	
-	width: 100%;
+body > header {
+	margin-top: 1%;
 }
-body > header > div > span {
-	max-width: 150px;
-	max-height: 150px;
+.mainHeader {
+	text-align: center;	
+}
+.mainHeader > span {
+	max-width: 13%;
+	max-height: 13%;
 	display: inline-block;
 	vertical-align: middle;	
 	border: 4px double #000;
-	padding: 10px;
+	padding: 1%;
 	letter-spacing: 1px;
 	font: 15px 'Cinzel Decorative', serif;
 }
@@ -19,29 +21,29 @@ span.left {
 span.right {
 	margin-left: 3%;
 }
-body > header > div > p {
+.name {
 	font: 75px 'Fredericka the Great', cursive;
 	display: inline-block;
 	margin: 0;
 	vertical-align: middle;
 }
-body > header > div > img {
+.ship {
 	display: inline-block;
 	width: 13%;
 	vertical-align: middle;
+	-webkit-filter: grayscale(100%);
 }
 /* Подзаголовок */
 section > header > div {
 	margin: 0 auto;
 	font: 25px 'Satisfy', cursive;
-	width: 93.5%;
+	width: 92%;
 	max-height: 50px;
 	border: 4px double #000;
 	font-variant: small-caps;
 }
 section > header > span {
 	display: block;
-	vertical-align: middle;	
 }
 span.date {
 	margin-left: 5%;
@@ -58,9 +60,7 @@ article {
 	margin-top: 3%;
 	font: 20px 'IM Fell Double Pica', serif;
 	border: 40px solid transparent;
-	border-image-source: url(http://cs628824.vk.me/v628824611/17660/qNB21TcAOFY.jpg);
-	border-image-slice:  100 100;
-	border-image-repeat: round;
+	border-image: url(http://cs628824.vk.me/v628824611/17660/qNB21TcAOFY.jpg) 100 100 round;
 }
 article > header {
 	text-transform: uppercase;
@@ -117,16 +117,16 @@ figure {
 	border: 2px dotted #ccc;
 	padding: 20px 20px;
 	text-align: center;
-	width: 1150px;
+	width: 80%;
 	margin: auto;
 }
-figure > p > img {
-	height: 300px;	
+figure > img {
+	width: 80%;
 }
 figcaption {
 	text-align: justify;
 	-webkit-column-count: 2;
-	width: 978px;
+	width: 80%;
 	margin: auto;
 }
 /* Подвал */
@@ -137,17 +137,61 @@ footer > p {
 	letter-spacing: 0.5em;
 }
 /* Настройки */
-.settings {
-	margin-top: 1%;
-	font: 15px 'Cinzel Decorative', serif;
+.color{
+	margin-left: 10%;
 }
-.settings > div {
-	display: inline-block;
+#black:checked ~ * {
+	background-color: #000;
+	color: #fff;
 }
-.chooseColor {
-	float: right;
-	margin-right: 5%;
+#black:checked ~ header > .mainHeader > span,
+section > header > div {
+	border-color: #fff;
 }
-.chooseFontSize {
-	margin-left: 5%;
+#black:checked ~ section > article {
+	border: none;
+	margin: auto;
+}
+#black:checked ~ header > div > img {
+	border: 2px solid #000;
+}
+/* шрифт больше */
+#bigger:checked ~ header > .mainHeader > span {
+	font-size: 20px;
+}
+#bigger:checked ~ header > .mainHeader > .name {
+	font-size: 80px;
+}
+#bigger:checked ~ section > header > div {
+	font-size: 30px;
+}
+#bigger:checked ~ section > article {
+	font-size: 25px;
+}
+#bigger:checked ~ section > article > header {
+	font-size: 40px;
+}
+#bigger:checked ~ section > article > div > .blockquote,
+section > article > div > .last > p {
+	font-size: 35px;
+}
+/* шрифт меньше */
+#smaller:checked ~ header > .mainHeader > span {
+	font-size: 10px;
+}
+#smaller:checked ~ header > .mainHeader > .name {
+	font-size: 70px;
+}
+#smaller:checked ~ section > header > div {
+	font-size: 20px;
+}
+#smaller:checked ~ section > article {
+	font-size: 15px;
+}
+#smaller:checked ~ section > article > header {
+	font-size: 30px;
+}
+#smaller:checked ~ section > article > div > .blockquote,
+section > article > div > .last > p {
+	font-size: 25px;
 }
