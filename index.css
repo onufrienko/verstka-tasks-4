@@ -1,9 +1,7 @@
 /* Заголовок */
-body > header {
-	margin-top: 1%;
-}
 .mainHeader {
 	text-align: center;	
+	font-size: 4vw;
 }
 .mainHeader > span {
 	max-width: 13%;
@@ -13,7 +11,7 @@ body > header {
 	border: 4px double #000;
 	padding: 1%;
 	letter-spacing: 1px;
-	font: 15px 'Cinzel Decorative', serif;
+	font: 0.25em 'Cinzel Decorative', serif;
 }
 span.left {
 	margin-right: 3%;
@@ -22,7 +20,7 @@ span.right {
 	margin-left: 3%;
 }
 .name {
-	font: 75px 'Fredericka the Great', cursive;
+	font: 1em 'Fredericka the Great', cursive;
 	display: inline-block;
 	margin: 0;
 	vertical-align: middle;
@@ -33,13 +31,17 @@ span.right {
 	vertical-align: middle;
 	-webkit-filter: grayscale(100%);
 }
+section {
+	font-size: 1vw;
+}
 /* Подзаголовок */
 section > header > div {
 	margin: 0 auto;
-	font: 25px 'Satisfy', cursive;
+	font: 1.5em 'Satisfy', cursive;
 	width: 92%;
-	max-height: 50px;
-	border: 4px double #000;
+	min-height: 50px;
+	border: 4px double;
+	border-color: #000;
 	font-variant: small-caps;
 }
 section > header > span {
@@ -56,15 +58,14 @@ span.price {
 article {
 	width: 90%;
 	text-align: justify;
-	margin-left: 2.5%;
-	margin-top: 3%;
-	font: 20px 'IM Fell Double Pica', serif;
+	margin: 3% auto;
+	font: 1em 'IM Fell Double Pica', serif;
 	border: 40px solid transparent;
 	border-image: url(http://cs628824.vk.me/v628824611/17660/qNB21TcAOFY.jpg) 100 100 round;
 }
 article > header {
 	text-transform: uppercase;
-	font: 35px 'Fredericka the Great', cursive;
+	font: 2em 'Fredericka the Great', cursive;
 	font-weight: bold;
 	text-decoration: overline underline;
 	text-align: center;
@@ -82,22 +83,22 @@ article > div > p, figcaption > p {
 	text-indent: 2%;
 }
 article > div > p::first-letter, figcaption > p::first-letter {
-	font: 30px 'Cinzel Decorative', cursive;
+	font: 1.5em 'Cinzel Decorative', cursive;
 }
 .assolHeader {
 	text-transform: uppercase;
 	text-shadow: 2px 2px #858585;
-	font-family: 'Jacques Francois Shadow', cursive;
+	font: 1.5em 'Jacques Francois Shadow', cursive;
 	text-align: center;
 }
 .assolHeader::first-letter {
-	font: 20px 'Jacques Francois Shadow', cursive;
+	font: 1.5em 'Jacques Francois Shadow', cursive;
 }
 .blockquote {
 	border-bottom: 3px dashed #bababa;
 	border-top: 3px dashed #bababa;
 	padding: 10px 15px;
-	font: 30px 'Italianno', cursive;
+	font: 1.5em 'Italianno', cursive;
 	line-height: 1;
 }
 .blockquote::first-letter {
@@ -110,7 +111,7 @@ hr {
 	-webkit-column-span: all;
 }
 .letUs, .last > p {
-	font: 30px 'Cinzel Decorative', cursive;
+	font: 1.5em 'Cinzel Decorative', cursive;
 	text-align: center;
 }
 figure {
@@ -133,10 +134,13 @@ figcaption {
 footer > p {
 	width: 100%;
 	text-align: center;
-	font: 40px 'Meddon' cursive;
+	font: 2em 'Meddon' cursive;
 	letter-spacing: 0.5em;
 }
 /* Настройки */
+.font, .color, label {
+	font-size: 1vw;
+}
 .color{
 	margin-left: 10%;
 }
@@ -145,7 +149,7 @@ footer > p {
 	color: #fff;
 }
 #black:checked ~ header > .mainHeader > span,
-section > header > div {
+#black:checked ~ section > header > div {
 	border-color: #fff;
 }
 #black:checked ~ section > article {
@@ -156,42 +160,20 @@ section > header > div {
 	border: 2px solid #000;
 }
 /* шрифт больше */
-#bigger:checked ~ header > .mainHeader > span {
-	font-size: 20px;
+#bigger:checked ~ header > .mainHeader {
+	font-size: 5vw;
 }
-#bigger:checked ~ header > .mainHeader > .name {
-	font-size: 80px;
+#bigger:checked ~ section {
+	font-size: 2vw;
 }
-#bigger:checked ~ section > header > div {
-	font-size: 30px;
-}
-#bigger:checked ~ section > article {
-	font-size: 25px;
-}
-#bigger:checked ~ section > article > header {
-	font-size: 40px;
-}
-#bigger:checked ~ section > article > div > .blockquote,
-section > article > div > .last > p {
-	font-size: 35px;
+#bigger:checked ~ header > .mainHeader .left,
+#bigger:checked ~ header > .mainHeader .right {
+	margin: 0;
 }
 /* шрифт меньше */
-#smaller:checked ~ header > .mainHeader > span {
-	font-size: 10px;
+#smaller:checked ~ header > .mainHeader {
+	font-size: 3vw;
 }
-#smaller:checked ~ header > .mainHeader > .name {
-	font-size: 70px;
-}
-#smaller:checked ~ section > header > div {
-	font-size: 20px;
-}
-#smaller:checked ~ section > article {
-	font-size: 15px;
-}
-#smaller:checked ~ section > article > header {
-	font-size: 30px;
-}
-#smaller:checked ~ section > article > div > .blockquote,
-section > article > div > .last > p {
-	font-size: 25px;
+#smaller:checked ~ section {
+	font-size: 0.5vw;
 }
